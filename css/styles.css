@@ -133,6 +133,7 @@
   line-height: 1.5;
   letter-spacing: 0.32px;
   font-style: normal;
+  transition: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .contacts-link:hover,
@@ -175,7 +176,9 @@
   border-radius: 2px;
   background: var(--accent-color);
   bottom: -1px;
-  transition: cubic-bezier(0.4, 0, 0.2, 1);
+}
+.header-active {
+  color: var(--accent-color, #404bbf);
 }
 
 /* ========================HERO===================== */
@@ -265,6 +268,8 @@
   transform: translate(-50%, -50%);
   background: #fcfcfc;
   border-radius: 4px;
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
   box-shadow: 0px 2px 1px 0px rgba(0, 0, 0, 0.2),
     0px 1px 3px 0px rgba(0, 0, 0, 0.12), 0px 1px 1px 0px rgba(0, 0, 0, 0.14);
 }
@@ -383,6 +388,7 @@
 }
 
 .gallery-items {
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
   flex-basis: calc((100% - 3 * 24px) / 4);
 }
 
@@ -618,11 +624,11 @@
   background: var(--accent-color);
   bottom: -1px;
   left: 0;
-  transition: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .portfolio-active {
   position: relative;
+  color: var(--accent-color, #404bbf);
 }
 
 /* ===============RESET-START============= */
