@@ -675,31 +675,31 @@
 
 /* =======================OVERLAY==================== */
 .overlay {
+  position: absolute;
+  top: 0;
+  padding: 40px 32px;
+  transform: translateY(+100%);
+  width: 100%;
+  height: 100%;
+
   background-color: #4d5ae5;
   font-size: 16px;
   font-style: normal;
   font-weight: 400;
   line-height: 1.5;
   letter-spacing: 0.02em;
-  padding: 40px 32px;
   color: #f4f4fd;
-  width: 100%;
-  height: 100%;
-  top: 0;
-
-  position: absolute;
-  transform: translateY(100%);
+  transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
   transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .overlay-wrapper {
   position: relative;
-  overflow: hidden;
+  overflow: hidde;
 }
 
 .overlay-link:hover,
 .overlay-link:focus {
-  transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
   transform: translateY(0%);
 }
 /* ===============RESET-START============= */
