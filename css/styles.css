@@ -697,8 +697,8 @@
   overflow: hidden;
 }
 
-.overlay-link:hover,
-.overlay-link:focus {
+.link-content:hover .overlay,
+.link-content:focus .overlay {
   transform: translateY(0%);
 }
 /* ===============RESET-START============= */
